@@ -15,7 +15,7 @@ DATABASE_URL = os.environ["DATABASE_URL"]
 HEROKU_APP_NAME = os.environ["HEROKU_APP_NAME"]
 
 app = Flask(__name__)
-Heroku = "https://{}.herokuapp.com/".format(HEROKU_APP_NAME)
+Heroku = "https://{}.render.com/".format(HEROKU_APP_NAME)
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
