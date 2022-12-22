@@ -11,7 +11,6 @@ import psycopg2
 LINE_CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
 LINE_CHANNEL_SECRET = os.environ["LINE_CHANNEL_SECRET"]
 DATABASE_URL = os.environ["DATABASE_URL"]
-" # 後ほどHerokuでPostgreSQLデータベースURLを取得
 HEROKU_APP_NAME = os.environ["HEROKU_APP_NAME"]
 
 app = Flask(__name__)
